@@ -136,7 +136,7 @@ public class StudentProvider extends ContentProvider {
                 throw new IllegalArgumentException("Unknown URI " + uri);
         }
 
-        return subType += "vnd." + StudentManagementContract.AUTHORITY + "." + StudentManagementContract.Student.TABLE_NAME;
+        return subType + "vnd." + StudentManagementContract.AUTHORITY + "." + StudentManagementContract.Student.TABLE_NAME;
 
     }
 }
